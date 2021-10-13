@@ -5,23 +5,46 @@
 }
 
 body {
-  background-image: linear-gradient(#35465e, #000000);
-  color: white;
   font-family: "Popins", sans-serif;
   min-height: 100vh;
 }
 
-header {
-  font-size: 1.5rem;
+#header-navb {
+  border-radius: 0%;
+  border: 0px;
+  background-color: aliceblue;
 }
 
-header,
+.navbar-brand {
+  padding: 20px;
+}
+
+.navbar-brand h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: 1.6em;
+  border: 0px;
+  margin: 0px;
+  line-height: 20px;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 1px solid black;
+}
+
 form {
   min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0px 20%;
 }
 
 form input,
@@ -30,28 +53,32 @@ form button {
   font-size: 2rem;
   border: none;
   background: white;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 form input {
-  color: rgb(97, 111, 139);
+  color: black;
 }
 
 form button {
-  color: #5ea3fd;
+  color: black;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 1px solid black;
 }
 
 form button:hover {
-  background: #5ea3fd;
-  color: white;
+  background: white;
+  color: black;
 }
 
 .todo-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .todo-list {
@@ -62,12 +89,14 @@ form button:hover {
 .todo {
   margin: 0.5rem;
   background: white;
-  color: rgb(97, 111, 139);
+  color: black;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 .todo li {
@@ -75,16 +104,17 @@ form button:hover {
 }
 .trash-btn,
 .completed-btn {
-  background: #ff6161;
-  color: white;
+  background: #ffffff;
+  color: black;
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  border-radius: 5px;
 }
 
 .completed-btn {
-  background: #5ea3fd;
+  background: #ffffff;
 }
 
 .todo-item {
@@ -94,6 +124,7 @@ form button:hover {
 .fa-trash,
 .fa-check {
   pointer-events: none;
+  border: 1px solid black;
 }
 
 .completed {
@@ -106,39 +137,43 @@ form button:hover {
   opacity: 0;
 }
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  border: none;
-}
-
 .select {
   margin: 1rem;
   position: relative;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 select {
-  color: #5ea3fd;
+  background-color: white;
+  color: black;
   width: 10rem;
   cursor: pointer;
   padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 .select::after {
   content: "\25BC";
-  position: absolute;
-  background: #5ea3fd;
+  position: 10px 0px;
+  background: white;
   top: 0;
   right: 0;
   padding: 1rem;
   pointer-events: none;
   transition: all 0.3s ease;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 .select:hover::after {
   background: white;
-  color: #5ea3fd;
+  color: black;
+}
+
+img {
+  width: 57%;
+  height: 5%;
+  margin: 1% 20%;
 }
